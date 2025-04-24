@@ -7,10 +7,8 @@ Console.WriteLine("\t- Pelo menos um caractere especial (ex: !, @, #)");
 Console.Write("\nDigite a senha: ");
 string senha = Console.ReadLine();
 
-// Inicializando a lista de erros (não é necessário usar um array fixo, uma lista é mais flexível)
 List<string> erros = new List<string>();
 
-// Verificando o comprimento da senha
 if (senha.Length < 8)
 {
     erros.Add("A senha deve ter no mínimo 8 caracteres!");
@@ -20,7 +18,6 @@ bool maiusculas = false;
 bool numeros = false;
 bool char_especial = false;
 
-// Verificando os caracteres da senha
 foreach (char caractere in senha)
 {
     if (Char.IsUpper(caractere))
@@ -33,7 +30,6 @@ foreach (char caractere in senha)
         numeros = true;
     }
 
-    // Verificando se o caractere é especial
     string caracteresEspeciais = @"!#$%&/()=?»«@£§€{}.-;'<>_,";
     if (caracteresEspeciais.Contains(caractere))
     {
@@ -41,7 +37,6 @@ foreach (char caractere in senha)
     }
 }
 
-// Verificando a presença de maiúsculas, números e caracteres especiais
 if (!maiusculas)
 {
     erros.Add("A senha deve ter pelo menos 1 letra maiúscula!");
@@ -55,7 +50,6 @@ if (!char_especial)
     erros.Add("A senha deve ter pelo menos 1 caractere especial!");
 }
 
-// Exibindo os resultados
 if (erros.Count == 0)
 {
     Console.WriteLine("Senha criada com sucesso!");

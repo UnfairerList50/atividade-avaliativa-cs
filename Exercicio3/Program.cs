@@ -7,4 +7,4 @@ for (int i = 1; i <= num; i++)
     fatorial *= i;
 }
 
-Console.WriteLine("O Fatorial de " + num + " é " * fatorial);
+Console.WriteLine("O Fatorial de " + num + " é " + fatorial);
