@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\JORGEFERNANDOKOZLOSK\\.nuget\\packages\\": {}
+    "C:\\Users\\juanb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\3 semestre\\Cs\\atividade-avaliativa-cs\\Exercicio6\\Exercicio6.csproj",
+      "projectUniqueName": "C:\\Users\\juanb\\OneDrive\\Documentos\\GitHub\\C#\\Trabalho\\atividade-avaliativa-cs\\Exercicio6\\Exercicio6.csproj",
       "projectName": "Exercicio6",
-      "projectPath": "d:\\3 semestre\\Cs\\atividade-avaliativa-cs\\Exercicio6\\Exercicio6.csproj",
-      "packagesPath": "C:\\Users\\JORGEFERNANDOKOZLOSK\\.nuget\\packages\\",
-      "outputPath": "d:\\3 semestre\\Cs\\atividade-avaliativa-cs\\Exercicio6\\obj\\",
+      "projectPath": "C:\\Users\\juanb\\OneDrive\\Documentos\\GitHub\\C#\\Trabalho\\atividade-avaliativa-cs\\Exercicio6\\Exercicio6.csproj",
+      "packagesPath": "C:\\Users\\juanb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\juanb\\OneDrive\\Documentos\\GitHub\\C#\\Trabalho\\atividade-avaliativa-cs\\Exercicio6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JORGEFERNANDOKOZLOSK\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\juanb\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -43,7 +43,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -59,12 +60,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.15, 8.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.15, 8.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.15, 8.0.15]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.15, 8.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -5,6 +5,11 @@ Console.WriteLine("\t- Pelo menos uma letra maiúscula");
 Console.WriteLine("\t- Pelo menos um número");
 Console.WriteLine("\t- Pelo menos um caractere especial (ex: !, @, #)");
 Console.Write("\nDigite a senha: ");
+
+bool senhaValida = false;
+
+while (!senhaValida) {
+
 string senha = Console.ReadLine();
 
 List<string> erros = new List<string>();
@@ -53,6 +58,7 @@ if (!char_especial)
 if (erros.Count == 0)
 {
     Console.WriteLine("Senha criada com sucesso!");
+    senhaValida = true;
 }
 else
 {
@@ -61,4 +67,5 @@ else
     {
         Console.WriteLine(erro);
     }
+}
 }

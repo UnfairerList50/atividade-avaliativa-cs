@@ -1,0 +1,15 @@
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\bin\Debug\net8.0\Exercicio1.exe
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\bin\Debug\net8.0\Exercicio1.deps.json
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\bin\Debug\net8.0\Exercicio1.runtimeconfig.json
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\bin\Debug\net8.0\Exercicio1.dll
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\bin\Debug\net8.0\Exercicio1.pdb
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\obj\Debug\net8.0\Exercicio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\obj\Debug\net8.0\Exercicio1.AssemblyInfoInputs.cache
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\obj\Debug\net8.0\Exercicio1.AssemblyInfo.cs
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\obj\Debug\net8.0\Exercicio1.csproj.CoreCompileInputs.cache
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\obj\Debug\net8.0\Exercicio1.sourcelink.json
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\obj\Debug\net8.0\Exercicio1.dll
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\obj\Debug\net8.0\refint\Exercicio1.dll
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\obj\Debug\net8.0\Exercicio1.pdb
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\obj\Debug\net8.0\Exercicio1.genruntimeconfig.cache
+C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio1\obj\Debug\net8.0\ref\Exercicio1.dll

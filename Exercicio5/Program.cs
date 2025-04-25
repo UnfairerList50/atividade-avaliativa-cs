@@ -1,25 +1,33 @@
-﻿using System;
+﻿Console.WriteLine("Digite uma palavra  ou frase para verificar se é um palíndromo: ");
+string palavra = Console.ReadLine();
 
-class Program
+string correcao = palavra.Replace(" ", "").ToLower().RemoverAcentos();
+
+string reverso = "";
+
+for (int i = correcao.Length - 1; i >= 0; i--)
 {
-    static void Main()
+    reverso += correcao[i];
+}
+
+if (correcao == reverso)
+{
+    Console.WriteLine($"{palavra} é um palíndromo");
+}
+else
+{
+    Console.WriteLine($"{palavra} não é um palíndromo");
+}
+
+public static class Acentuacao
+{
+    public static string RemoverAcentos(this string acento)
     {
-        Console.Write("Digite uma palavra ou frase: ");
-        string entrada = Console.ReadLine().ToLower();
-
-        // Remove espaços e pontuações simples
-        string fraseLimpa = new string(entrada.Where(c => char.IsLetter(c)).ToArray());
-
-        // Verifica se é palíndromo
-        string reverso = new string(fraseLimpa.Reverse().ToArray());
-
-        if (fraseLimpa == reverso)
-        {
-            Console.WriteLine("A palavra é um palíndromo");
-        }
-        else
-        {
-            Console.WriteLine("A palavra não é um palíndromo.");
-        }
+        return acento.Replace("á", "a").Replace("à", "a").Replace("ã", "a").Replace("â", "a")
+                     .Replace("é", "e").Replace("ê", "e")
+                     .Replace("í", "i")
+                     .Replace("ó", "o").Replace("ô", "o").Replace("õ", "o")
+                     .Replace("ú", "u")
+                     .Replace("ç", "c");
     }
 }

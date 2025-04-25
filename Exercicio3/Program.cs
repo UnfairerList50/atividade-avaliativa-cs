@@ -1,10 +1,13 @@
-﻿Console.Write("Digite um número: ");
+﻿Console.WriteLine("Informe um número: ");
 int num = Convert.ToInt32(Console.ReadLine());
+
+int contador = num;
 int fatorial = 1;
 
-for (int i = 1; i <= num; i++)
+while(contador > 1)
 {
-    fatorial *= i;
+    fatorial *= contador;
+    contador--;
 }
 
-Console.WriteLine("O Fatorial de " + num + " é " + fatorial);
+Console.WriteLine($"{num}! = {fatorial}");

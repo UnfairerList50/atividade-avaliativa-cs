@@ -15,6 +15,7 @@ Após a entrada do usuário, é feita uma verificação por meio de métodos den
 O programa inicia solicitando a entrada de um número. Então, por meio de um laço `for`, é imprimido a multiplicação desse número, de 1 a 10.
 
 ### 3.  Cálculo de Fatorial com `while`
+O fatorial de um número n se dá pela multiplicação de todos os números inteiros positivos menores ou iguais a n, até 1. O programa se inicia solicitando um número ao usuário, em seguida a variável `fatorial` é inicializada em 1 e uma variável auxiliar chamada `contador` recebe o valor do número digitado. Em seguida, por meio de um laço `while`, o valor de `fatorial` é multiplicado pelo `contador`, e este é decrementado até atingir 1. Por fim, o resultado é impresso na tela.
 
 ### 4. Conversor de Temperaturas com Menu (questão detalhada)
 Neste exercício, é calculado a conversão de temperaturas nas escalas Celsius e Fahrenheit.  
@@ -71,44 +72,51 @@ default:
 }
 ```
 
-### 5. Verificador de Palíndromos (questão detalhada)
-Peça ao usuário para digitar uma palavra ou frase e verifique se ela é um palíndromo (lê-se igual de frente para trás e de trás para frente, desconsiderando espaços e acentos).
 
-Esse é `um trecho de código` no meio de uma frase.
+
+### 5. Verificador de Palíndromos (questão detalhada)
+Palíndromo é uma palavra ou frase que pode ser lida de frente para trás ou de trás para frente, pois o resultado é o mesmo.
+O exercício solicitava um sistema capaz de verificar se uma palavra ou frase se tratava ou não de um palíndromo. 
+
+* O programa se inicia solicitando ao usuário que digite uma sentença para que a verificação seja feita, o texto digitado é armazenada na variável do tipo string `palavra`.
 
 ```csharp
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        Console.Write("Digite uma palavra ou frase: ");
-        string entrada = Console.ReadLine().ToLower();
-
-        // Remove espaços e pontuações simples
-        string fraseLimpa = new string(entrada.Where(c => char.IsLetter(c)).ToArray());
-
-        // Verifica se é palíndromo
-        string reverso = new string(fraseLimpa.Reverse().ToArray());
-
-        if (fraseLimpa == reverso)
-        {
-            Console.WriteLine("A palavra é um palíndromo");
-        }
-        else
-        {
-            Console.WriteLine("A palavra não é um palíndromo.");
-        }
-    }
-}
+Console.WriteLine("Digite uma palavra  ou frase para verificar se é um palíndromo: ");
+string palavra = Console.ReadLine();
 ```
+Em seguida, fora criado a variável `correcao`, ela será responsável, juntamente de outras méetodos, por formatar a palavra ou frase digitada pelo usuário para um determinado padrão, evitando erros lógicos por parte do programa.
+
+```csharp
+string correcao = palavra.Replace(" ", "").ToLower().RemoverAcentos();
+```
+
+* O método `Replace` serve para substituir um carácter por outro, sua sintaxe é a seguinte: `string.Replace(char, char)`, onde, dentro do parênteses, o primeiro carácter antes da vírgula se trata do alvo da substituição e após a vírgula, o carácter que vai substituir o antigo. Nesse caso ele está alterando a string `palavra`, o alvo da substituição é qualquer espaço que uma frase digitada pelo usuário possa ter. A ideia é que todos os espaços sejam eliminados, garantindo o funcionamento correto da lógica desenvolvida.
+
+```csharp
+palavra.Replace(" ", "")
+```
+
+* Em diante temos outro método, o `ToLower()`, seu papel é simples, converter todas as letras maiúsculas em minúsculas. Alguns palíndromos, como "Ana", não seriam considerados palíndromos sem esse método, pois as letras "A" e "a" seriam considerados carácteres distintos, devido a diferença de tamanho de ambos.
+
+```csharp
+.ToLower()
+```
+
+Para fechar essa etapa, temos a função `RemoverAcentos()`. Infelizmente, em Java, não existe um método que retire a acentuação de uma string, portanto, a solução foi criar uma função capaz de fazer isso.
+
+```csharp
+RemoverAcentos();
+```
+
+* Uma nova classe pública chamada `Acentuacao` foi criada na parte inferior do código, dentro dela está a função nomeada de `RemoverAcentos`, dentro dela foi declarado uma string chamada `acento`, é importante que essa string seja acompanhada de um `this`, 
+
 
 ### 6. Cadastro Simples de Produtos
 
 ### 7. Soma de Números Pares de um Array
 
 ### 8. Cálculo de IMC com Classificação
+IMC é uma medida que faz uma relação entre o peso e a altura de uma pessoa para determinar se ela está dentro do peso adequado. O programa se inicia solicitando o peso e altura do usuário, em seguida ele utiliza a fórmula: `peso / (altura * altura)` para calcular o IMC. Utilizando as condições `if`, `else if`,`else` e, com base no valor obtido, o programa finaliza exibindo a classificação correspondente, que pode ser `Abaixo do peso`, `Peso normal`, `Sobrepeso` ou `Obesidade`.
 
 ### 9. Jogo da Adivinhação
 
