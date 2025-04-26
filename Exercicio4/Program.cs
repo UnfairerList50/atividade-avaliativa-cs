@@ -16,7 +16,7 @@
         case 2:
             Console.Write("Digite a temperatura (°F): ");
             int fahrenheit = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("A temperatura em Fahrenheit é: " + ((fahrenheit - 32) * 5 / 9));
+            Console.WriteLine("A temperatura em Celsius é: " + ((fahrenheit - 32) * 5 / 9));
             break;
         case 3:
             return;

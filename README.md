@@ -51,7 +51,7 @@ Depois, a condicional `switch` recebe a escolha do usuário e direciona o fluxo 
         case 2:
             Console.Write("Digite a temperatura (°F): ");
             int fahrenheit = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("A temperatura em Fahrenheit é: " + ((fahrenheit - 32) * 5 / 9));
+            Console.WriteLine("A temperatura em Celsius é: " + ((fahrenheit - 32) * 5 / 9));
             break;
     ```
 
@@ -84,32 +84,75 @@ O exercício solicitava um sistema capaz de verificar se uma palavra ou frase se
 Console.WriteLine("Digite uma palavra  ou frase para verificar se é um palíndromo: ");
 string palavra = Console.ReadLine();
 ```
-Em seguida, fora criado a variável `correcao`, ela será responsável, juntamente de outras méetodos, por formatar a palavra ou frase digitada pelo usuário para um determinado padrão, evitando erros lógicos por parte do programa.
+Em seguida, foi criada a variável `correcao`, ela será responsável, juntamente de outros métodos, por formatar a palavra ou frase digitada pelo usuário para um determinado padrão, evitando erros lógicos por parte do programa.
 
 ```csharp
 string correcao = palavra.Replace(" ", "").ToLower().RemoverAcentos();
 ```
 
-* O método `Replace` serve para substituir um carácter por outro, sua sintaxe é a seguinte: `string.Replace(char, char)`, onde, dentro do parênteses, o primeiro carácter antes da vírgula se trata do alvo da substituição e após a vírgula, o carácter que vai substituir o antigo. Nesse caso ele está alterando a string `palavra`, o alvo da substituição é qualquer espaço que uma frase digitada pelo usuário possa ter. A ideia é que todos os espaços sejam eliminados, garantindo o funcionamento correto da lógica desenvolvida.
+* O método `Replace` serve para substituir um caractere por outro, sua sintaxe é a seguinte: `string.Replace(string, string)`, onde, dentro do parênteses, o primeiro caractere antes da vírgula se trata do alvo da substituição e após a vírgula, o caractere que vai substituir o antigo. Nesse caso ele está alterando a string `palavra`, o alvo da substituição é qualquer espaço que uma frase digitada pelo usuário possa ter. A ideia é que todos os espaços sejam eliminados, garantindo o funcionamento correto da lógica desenvolvida.
 
 ```csharp
 palavra.Replace(" ", "")
 ```
 
-* Em diante temos outro método, o `ToLower()`, seu papel é simples, converter todas as letras maiúsculas em minúsculas. Alguns palíndromos, como "Ana", não seriam considerados palíndromos sem esse método, pois as letras "A" e "a" seriam considerados carácteres distintos, devido a diferença de tamanho de ambos.
+* Em diante temos outro método, o `ToLower()`, seu papel é simples, converter todas as letras maiúsculas em minúsculas. Alguns palíndromos, como "Ana", não seriam considerados palíndromos sem esse método, pois as letras "A" e "a" seriam considerados caracteres distintos, devido à diferença de tamanho de ambos.
 
 ```csharp
 .ToLower()
 ```
 
-Para fechar essa etapa, temos a função `RemoverAcentos()`. Infelizmente, em Java, não existe um método que retire a acentuação de uma string, portanto, a solução foi criar uma função capaz de fazer isso.
+Para fechar essa etapa, temos a função `RemoverAcentos()`. Infelizmente, em C#, não existe um método que retire a acentuação de uma string, portanto, a solução foi criar uma função capaz de fazer isso.
 
 ```csharp
 RemoverAcentos();
 ```
 
-* Uma nova classe pública chamada `Acentuacao` foi criada na parte inferior do código, dentro dela está a função nomeada de `RemoverAcentos`, dentro dela foi declarado uma string chamada `acento`, é importante que essa string seja acompanhada de um `this`, 
+* Uma nova classe pública chamada `Acentuacao` foi criada na parte inferior do código, dentro dela está a função nomeada de `RemoverAcentos`. Nessa função, é declarada uma string chamada `acento`, é importante que essa string seja acompanhada de um `this`, pois ele transforma `RemoverAcentos` em um método de extensão, permitindo que ele seja chamado direto em qualquer string.
 
+ * Dentro dessa função, foi usada uma cadeia de `Replace`, eles trocam as letras acentuadas para não acentuadas.
+
+```csharp
+.
+.
+.
+public static class Acentuacao
+{
+    public static string RemoverAcentos(this string acento)
+    {
+        return acento.Replace("á", "a").Replace("à", "a").Replace("ã", "a").Replace("â", "a")
+                     .Replace("é", "e").Replace("ê", "e")
+                     .Replace("í", "i")
+                     .Replace("ó", "o").Replace("ô", "o").Replace("õ", "o")
+                     .Replace("ú", "u")
+                     .Replace("ç", "c");
+    }
+}
+```
+
+* Voltando um pouco no código, temos a declaração da variável do tipo string `reverso`, onde ela é inicializada com um valor vazio, em sequência temos um `for`, com a variável do tipo inteiro `i` sendo declarada e recebendo o valor de `correcao.Length - 1`, `Length` tem a função de retornar o número total de caracteres de uma string, já o `- 1` define que `i` irá acessar o caractere final da string `correcao`. A ideia é que `i` percorra os caracteres de `correcao` de trás para frente, depois a variável `reverso` armazena essa string invertida.
+
+```csharp
+string reverso = "";
+
+for (int i = correcao.Length - 1; i >= 0; i--)
+{
+    reverso += correcao[i];
+}
+```
+
+* Por fim, utilizando uma lógica de `if` e `else` ocorre uma verificação para determinar o que será impresso para o usuário. Caso `correcao` seja igual a `reverso`, a palavra é um palíndromo, senão, não é.
+
+```csharp
+if (correcao == reverso)
+{
+    Console.WriteLine($"{palavra} é um palíndromo");
+}
+else
+{
+    Console.WriteLine($"{palavra} não é um palíndromo");
+}
+```
 
 ### 6. Cadastro Simples de Produtos
 Este programa é um sistema de cadastro de produtos. Ele:
@@ -117,9 +160,9 @@ Este programa é um sistema de cadastro de produtos. Ele:
 - Solicita ao usuário que insira informações de três produtos (nome, preço e quantidade).
 - Armazena os produtos em uma lista e, ao final, exibe os detalhes de cada produto com o valor total calculado.
 ### 7. Soma de Números Pares de um Array
-Este código solicita ao usuário que insira 3 números. Para cada número digitado, ele verifica se é par (usando `num % 2 == 0`). Se for, adiciona o valor à variável `somaPares`. Ao final, exibe a soma total de todos os números pares informados. 
+Este código solicita ao usuário que insira três números. Para cada número digitado, ele verifica se é par (usando `num % 2 == 0`). Se for, adiciona o valor à variável `somaPares`. Ao final, exibe a soma total de todos os números pares informados. 
 ### 8. Cálculo de IMC com Classificação
-IMC é uma medida que faz uma relação entre o peso e a altura de uma pessoa para determinar se ela está dentro do peso adequado. O programa se inicia solicitando o peso e altura do usuário, em seguida ele utiliza a fórmula: `peso / (altura * altura)` para calcular o IMC. Utilizando as condições `if`, `else if`,`else` e, com base no valor obtido, o programa finaliza exibindo a classificação correspondente, que pode ser `Abaixo do peso`, `Peso normal`, `Sobrepeso` ou `Obesidade`.
+IMC é um índice que faz uma relação entre o peso e a altura de uma pessoa para determinar se ela está dentro do peso adequado. O programa se inicia solicitando o peso e altura do usuário, em seguida ele utiliza a fórmula: `peso / (altura * altura)` para calcular o IMC. Utilizando as condições `if`, `else if`,`else` e, com base no valor obtido, o programa finaliza exibindo a classificação correspondente, que pode ser `Abaixo do peso`, `Peso normal`, `Sobrepeso` ou `Obesidade`.
 
 ### 9. Jogo da Adivinhação
 Este programa é um jogo de adivinhação onde o usuário tenta descobrir um número aleatório gerado pelo comando `Random`, entre 1 e 100. Ele fornece dicas se o número é maior ou menor, conta as tentativas e finaliza quando o palpite está correto.
@@ -128,4 +171,4 @@ Este programa é um gerenciador simples de tarefas. Ele permite que o usuário:
 - Adicione tarefas.
 - Marque tarefas como concluídas.
 - Exiba todas as tarefas e seus status.
-Usa listas para armazenar tarefas e seus estados, um laço do-while para interação.  
+Usa listas para armazenar tarefas e seus estados, um laço `do-while` para interação.  
