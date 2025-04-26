@@ -1,0 +1,15 @@
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\bin\Debug\net8.0\Exercicio7.exe
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\bin\Debug\net8.0\Exercicio7.deps.json
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\bin\Debug\net8.0\Exercicio7.runtimeconfig.json
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\bin\Debug\net8.0\Exercicio7.dll
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\bin\Debug\net8.0\Exercicio7.pdb
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\obj\Debug\net8.0\Exercicio7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\obj\Debug\net8.0\Exercicio7.AssemblyInfoInputs.cache
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\obj\Debug\net8.0\Exercicio7.AssemblyInfo.cs
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\obj\Debug\net8.0\Exercicio7.csproj.CoreCompileInputs.cache
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\obj\Debug\net8.0\Exercicio7.sourcelink.json
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\obj\Debug\net8.0\Exercicio7.dll
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\obj\Debug\net8.0\refint\Exercicio7.dll
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\obj\Debug\net8.0\Exercicio7.pdb
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\obj\Debug\net8.0\Exercicio7.genruntimeconfig.cache
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio7\obj\Debug\net8.0\ref\Exercicio7.dll

@@ -11,11 +11,12 @@ class Program
 
         do
         {
-            Console.WriteLine("\n1 - Adicionar tarefa");
-            Console.WriteLine("2 - Marcar como concluída");
-            Console.WriteLine("3 - Mostrar todas as tarefas");
-            Console.WriteLine("4 - Sair");
-            Console.Write("Digite sua opção: ");
+            Console.WriteLine("\nLISTA DE TAREFAS");
+            Console.WriteLine("\t1 - Adicionar tarefa");
+            Console.WriteLine("\t2 - Marcar como concluída");
+            Console.WriteLine("\t3 - Mostrar todas as tarefas");
+            Console.WriteLine("\t4 - Sair");
+            Console.Write("\nDigite sua opção: ");
             opcao = Convert.ToInt32(Console.ReadLine());
 
             switch (opcao)
@@ -42,7 +43,7 @@ class Program
                     for (int i = 0; i < tarefas.Count; i++)
                     {
                         string status = concluidas[i] ? "[X]" : "[ ]";
-                        Console.WriteLine($"{i + 1}. {status} {tarefas[i]}");
+                        Console.WriteLine($"\t{i + 1}. {status} {tarefas[i]}");
                     }
                     break;
             }

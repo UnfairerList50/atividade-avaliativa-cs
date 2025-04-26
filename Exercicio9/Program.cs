@@ -5,7 +5,7 @@ class Program
     static void Main()
     {
         Random random = new Random();
-        int numeroSecreto = random.Next(1, 101);
+        int numAleatorio = random.Next(1, 101);
         int tentativa, tentativas = 0;
 
         Console.WriteLine("Adivinhe o número entre 1 e 100");
@@ -16,12 +16,12 @@ class Program
             tentativa = Convert.ToInt32(Console.ReadLine());
             tentativas++;
 
-            if (tentativa < numeroSecreto)
-                Console.WriteLine("O número gerado é maior!");
-            else if (tentativa > numeroSecreto)
-                Console.WriteLine("O número gerado é menor!");
+            if (tentativa < numAleatorio)
+                Console.WriteLine("O número gerado é maior!\n");
+            else if (tentativa > numAleatorio)
+                Console.WriteLine("O número gerado é menor!\n");
 
-        } while (tentativa != numeroSecreto);
+        } while (tentativa != numAleatorio);
 
         Console.WriteLine("Você acertou em " + tentativas + " tentativas.");
     }

@@ -1,0 +1,15 @@
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\bin\Debug\net8.0\Exercicio10.exe
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\bin\Debug\net8.0\Exercicio10.deps.json
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\bin\Debug\net8.0\Exercicio10.runtimeconfig.json
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\bin\Debug\net8.0\Exercicio10.dll
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\bin\Debug\net8.0\Exercicio10.pdb
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\obj\Debug\net8.0\Exercicio10.GeneratedMSBuildEditorConfig.editorconfig
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\obj\Debug\net8.0\Exercicio10.AssemblyInfoInputs.cache
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\obj\Debug\net8.0\Exercicio10.AssemblyInfo.cs
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\obj\Debug\net8.0\Exercicio10.csproj.CoreCompileInputs.cache
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\obj\Debug\net8.0\Exercicio10.sourcelink.json
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\obj\Debug\net8.0\Exercicio10.dll
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\obj\Debug\net8.0\refint\Exercicio10.dll
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\obj\Debug\net8.0\Exercicio10.pdb
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\obj\Debug\net8.0\Exercicio10.genruntimeconfig.cache
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio10\obj\Debug\net8.0\ref\Exercicio10.dll

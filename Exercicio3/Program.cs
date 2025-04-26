@@ -1,13 +1,21 @@
-﻿Console.WriteLine("Informe um número: ");
-int num = Convert.ToInt32(Console.ReadLine());
+﻿using System;
 
-int contador = num;
-int fatorial = 1;
-
-while(contador > 1)
+class Program
 {
-    fatorial *= contador;
-    contador--;
-}
+    static void Main()
+    {
+        Console.Write("Informe um número: ");
+        int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"{num}! = {fatorial}");
+        int contador = num;
+        int fatorial = 1;
+
+        while (contador > 1)
+        {
+            fatorial *= contador;
+            contador--;
+        }
+
+        Console.WriteLine($"{num}! = {fatorial}");
+    }
+}

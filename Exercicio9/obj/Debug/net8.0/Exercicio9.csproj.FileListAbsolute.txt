@@ -13,3 +13,18 @@ C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Ex
 C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\Exercicio9.pdb
 C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\Exercicio9.genruntimeconfig.cache
 C:\Users\juanb\OneDrive\Documentos\GitHub\C#\Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\ref\Exercicio9.dll
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\bin\Debug\net8.0\Exercicio9.exe
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\bin\Debug\net8.0\Exercicio9.deps.json
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\bin\Debug\net8.0\Exercicio9.runtimeconfig.json
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\bin\Debug\net8.0\Exercicio9.dll
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\bin\Debug\net8.0\Exercicio9.pdb
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\Exercicio9.GeneratedMSBuildEditorConfig.editorconfig
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\Exercicio9.AssemblyInfoInputs.cache
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\Exercicio9.AssemblyInfo.cs
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\Exercicio9.csproj.CoreCompileInputs.cache
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\Exercicio9.sourcelink.json
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\Exercicio9.dll
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\refint\Exercicio9.dll
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\Exercicio9.pdb
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\Exercicio9.genruntimeconfig.cache
+D:\Arquivos\Área de Trabalho\atividade-avaliativa-cs\Exercicio9\obj\Debug\net8.0\ref\Exercicio9.dll

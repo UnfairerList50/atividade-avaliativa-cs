@@ -38,7 +38,7 @@ class Program
         Console.WriteLine("\nProdutos cadastrados:");
         foreach (var p in produtos)
         {
-            Console.WriteLine(p.Nome + " - Valor total em estoque (R$): " + p.Quantidade * p.Preco);
+            Console.WriteLine(p.Nome + " - Valor total em estoque: " + p.Quantidade * p.Preco + " reais.");
         }
     }
 }

@@ -80,10 +80,10 @@ O exercício solicitava um sistema capaz de verificar se uma palavra ou frase se
 
 * O programa se inicia solicitando ao usuário que digite uma sentença para que a verificação seja feita, o texto digitado é armazenada na variável do tipo string `palavra`.
 
-```csharp
-Console.WriteLine("Digite uma palavra  ou frase para verificar se é um palíndromo: ");
-string palavra = Console.ReadLine();
-```
+    ```csharp
+    Console.Write("Digite uma palavra ou frase para verificar se é um palíndromo: ");
+    string palavra = Console.ReadLine();
+    ```
 Em seguida, foi criada a variável `correcao`, ela será responsável, juntamente de outros métodos, por formatar a palavra ou frase digitada pelo usuário para um determinado padrão, evitando erros lógicos por parte do programa.
 
 ```csharp
@@ -92,15 +92,15 @@ string correcao = palavra.Replace(" ", "").ToLower().RemoverAcentos();
 
 * O método `Replace` serve para substituir um caractere por outro, sua sintaxe é a seguinte: `string.Replace(string, string)`, onde, dentro do parênteses, o primeiro caractere antes da vírgula se trata do alvo da substituição e após a vírgula, o caractere que vai substituir o antigo. Nesse caso ele está alterando a string `palavra`, o alvo da substituição é qualquer espaço que uma frase digitada pelo usuário possa ter. A ideia é que todos os espaços sejam eliminados, garantindo o funcionamento correto da lógica desenvolvida.
 
-```csharp
-palavra.Replace(" ", "")
-```
+    ```csharp
+    palavra.Replace(" ", "")
+    ```
 
 * Em diante temos outro método, o `ToLower()`, seu papel é simples, converter todas as letras maiúsculas em minúsculas. Alguns palíndromos, como "Ana", não seriam considerados palíndromos sem esse método, pois as letras "A" e "a" seriam considerados caracteres distintos, devido à diferença de tamanho de ambos.
 
-```csharp
-.ToLower()
-```
+    ```csharp
+    .ToLower()
+    ```
 
 Para fechar essa etapa, temos a função `RemoverAcentos()`. Infelizmente, em C#, não existe um método que retire a acentuação de uma string, portanto, a solução foi criar uma função capaz de fazer isso.
 
@@ -110,49 +110,46 @@ RemoverAcentos();
 
 * Uma nova classe pública chamada `Acentuacao` foi criada na parte inferior do código, dentro dela está a função nomeada de `RemoverAcentos`. Nessa função, é declarada uma string chamada `acento`, é importante que essa string seja acompanhada de um `this`, pois ele transforma `RemoverAcentos` em um método de extensão, permitindo que ele seja chamado direto em qualquer string.
 
- * Dentro dessa função, foi usada uma cadeia de `Replace`, eles trocam as letras acentuadas para não acentuadas.
+* Dentro dessa função, foi usada uma cadeia de `Replace`, eles trocam as letras acentuadas para não acentuadas.
 
-```csharp
-.
-.
-.
-public static class Acentuacao
-{
-    public static string RemoverAcentos(this string acento)
+    ```csharp
+    public static class Acentuacao
     {
-        return acento.Replace("á", "a").Replace("à", "a").Replace("ã", "a").Replace("â", "a")
-                     .Replace("é", "e").Replace("ê", "e")
-                     .Replace("í", "i")
-                     .Replace("ó", "o").Replace("ô", "o").Replace("õ", "o")
-                     .Replace("ú", "u")
-                     .Replace("ç", "c");
+        public static string RemoverAcentos(this string acento)
+        {
+            return acento.Replace("á", "a").Replace("à", "a").Replace("ã", "a").Replace("â", "a")
+                        .Replace("é", "e").Replace("ê", "e")
+                        .Replace("í", "i")
+                        .Replace("ó", "o").Replace("ô", "o").Replace("õ", "o")
+                        .Replace("ú", "u")
+                        .Replace("ç", "c");
+        }
     }
-}
-```
+    ```
 
 * Voltando um pouco no código, temos a declaração da variável do tipo string `reverso`, onde ela é inicializada com um valor vazio, em sequência temos um `for`, com a variável do tipo inteiro `i` sendo declarada e recebendo o valor de `correcao.Length - 1`, `Length` tem a função de retornar o número total de caracteres de uma string, já o `- 1` define que `i` irá acessar o caractere final da string `correcao`. A ideia é que `i` percorra os caracteres de `correcao` de trás para frente, depois a variável `reverso` armazena essa string invertida.
 
-```csharp
-string reverso = "";
+    ```csharp
+    string reverso = "";
 
-for (int i = correcao.Length - 1; i >= 0; i--)
-{
-    reverso += correcao[i];
-}
-```
+    for (int i = correcao.Length - 1; i >= 0; i--)
+    {
+        reverso += correcao[i];
+    }
+    ```
 
 * Por fim, utilizando uma lógica de `if` e `else` ocorre uma verificação para determinar o que será impresso para o usuário. Caso `correcao` seja igual a `reverso`, a palavra é um palíndromo, senão, não é.
 
-```csharp
-if (correcao == reverso)
-{
-    Console.WriteLine($"{palavra} é um palíndromo");
-}
-else
-{
-    Console.WriteLine($"{palavra} não é um palíndromo");
-}
-```
+    ```csharp
+    if (correcao == reverso)
+    {
+        Console.WriteLine($"{palavra} é um palíndromo");
+    }
+    else
+    {
+        Console.WriteLine($"{palavra} não é um palíndromo");
+    }
+    ```
 
 ### 6. Cadastro Simples de Produtos
 Este programa é um sistema de cadastro de produtos. Ele:
