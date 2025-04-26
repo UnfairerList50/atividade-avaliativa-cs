@@ -112,12 +112,20 @@ RemoverAcentos();
 
 
 ### 6. Cadastro Simples de Produtos
-
+Este programa é um sistema de cadastro de produtos. Ele:
+- Define uma classe `Produto`, que possui atributos básicos como `Nome`, `Preço` e `Quantidade`, além de um método para calcular o valor total em estoque.
+- Solicita ao usuário que insira informações de três produtos (nome, preço e quantidade).
+- Armazena os produtos em uma lista e, ao final, exibe os detalhes de cada produto com o valor total calculado.
 ### 7. Soma de Números Pares de um Array
-
+Este código solicita ao usuário que insira 3 números. Para cada número digitado, ele verifica se é par (usando `num % 2 == 0`). Se for, adiciona o valor à variável `somaPares`. Ao final, exibe a soma total de todos os números pares informados. 
 ### 8. Cálculo de IMC com Classificação
 IMC é uma medida que faz uma relação entre o peso e a altura de uma pessoa para determinar se ela está dentro do peso adequado. O programa se inicia solicitando o peso e altura do usuário, em seguida ele utiliza a fórmula: `peso / (altura * altura)` para calcular o IMC. Utilizando as condições `if`, `else if`,`else` e, com base no valor obtido, o programa finaliza exibindo a classificação correspondente, que pode ser `Abaixo do peso`, `Peso normal`, `Sobrepeso` ou `Obesidade`.
 
 ### 9. Jogo da Adivinhação
-
+Este programa é um jogo de adivinhação onde o usuário tenta descobrir um número aleatório gerado pelo comando `Random`, entre 1 e 100. Ele fornece dicas se o número é maior ou menor, conta as tentativas e finaliza quando o palpite está correto.
 ### 10. Lista de Tarefas (To-Do List)
+Este programa é um gerenciador simples de tarefas. Ele permite que o usuário:
+- Adicione tarefas.
+- Marque tarefas como concluídas.
+- Exiba todas as tarefas e seus status.
+Usa listas para armazenar tarefas e seus estados, um laço do-while para interação.  
